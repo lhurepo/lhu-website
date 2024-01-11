@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* Main Image + Navigation Bar Section */
+
+.navbar2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  transition: background-color 0.15s, color 0.15s;
+  background-color: black;
+}
+
+.navbar2:hover {
+  background-color: white;
+}
+
+.navbar2:hover .top-bar2,
+.navbar2:hover .hikaru-title2 {
+  color: black;
+}
+
+
+.hikaru-title2 {
+  cursor: pointer;
+  font-size: 55px;
+  font-weight: 700px;
+  color: white;
+  display: flex;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.top-bar2 {
+  cursor: pointer;
+  display: flex;
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 10px;
+  align-items: center;
+  transition: opacity 0.15s, color 0.15s;
+}
+
+.top-bar2:first-child {
+  margin-left: 5vw;
+}
+
+.top-bar2:last-child {
+  margin-right: 5vw;
+}
+
+.top-bar2:hover {
+  opacity: 0.7;
+}

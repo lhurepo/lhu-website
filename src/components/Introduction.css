@@ -1,0 +1,63 @@
+.intro-about-section {
+    background-color: white;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.intro-title {
+    font-size: large;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.intro-text {
+    max-width: 900px;
+    padding-top: 20px;
+}
+
+.japanese-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+
+.about-title {
+    padding-top: 100px;
+}
+
+.accordion {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.accordion-button[aria-expanded="true"] {
+    background-color: #F2F2F2;
+    color: black;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, .125);
+}
+
+
+.btn-light {
+    border: none;
+    outline: none;
+    padding: 0;
+    font-size: small;
+    background-color: #F2F2F2;
+}
+
+.popover {
+    max-width: 668px;
+}
