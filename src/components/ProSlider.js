@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -10,10 +10,23 @@ import './ProSlider.css';
 import { Scrollbar, Navigation } from 'swiper/modules';
 
 function ProSlider() {
+    const sliderRef = useRef(null);
+
+    const handlePrev = useCallback(() => {
+        if (!sliderRef.current) return;
+        sliderRef.current.swiper.slidePrev();
+    }, []);
+
+    const handleNext = useCallback(() => {
+        if (!sliderRef.current) return;
+        sliderRef.current.swiper.sliderNext();
+    }, []);
+
     return (
         <div className='pro-photos'>
             <div className="pro-title">Professional Photos</div>
             <Swiper
+                ref={sliderRef}
                 breakpoints={{
                     300: {
                         slidesPerView: 1,
@@ -31,7 +44,7 @@ function ProSlider() {
                 slidesPerView={5}
                 spaceBetween={20}
                 loop={true}
-                navigation={{ enabled: true, nextEl: '#nav-right', prevEl: '#nav-left' }}
+                navigation
                 modules={[Scrollbar, Navigation]}
                 scrollbar={{ draggable: true }}
             >
@@ -52,12 +65,9 @@ function ProSlider() {
                 <SwiperSlide><img src='./images/DSC01484.jpg' alt='slide1'></img></SwiperSlide>
                 <SwiperSlide><img src='./images/DSC01686.jpg' alt='slide1'></img></SwiperSlide>
                 <SwiperSlide><img src='./images/DSC01794.jpg' alt='slide1'></img></SwiperSlide>
-
+                <div className='prev-arrow' onClick={handlePrev} />
+                <div className='next-arrow' onClick={handleNext} />
             </Swiper>
-            <div class="swiper-custom-nav">
-                <img src="./images/left-arrow.png" alt="Left Arrow" id="nav-left" />
-                <img src="./images/right-arrow.png" alt="Right Arrow" id="nav-right" />
-            </div>
         </div>
     );
 }

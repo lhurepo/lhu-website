@@ -5,8 +5,9 @@ function Footer() {
     return (
         <div className='footer-container'>
             <div className='footer-content'>
-                <p>&copy; 2023 Hikaru Un. All rights reserved.</p>
-                <p>lucashikaruun@gmail.com</p>
+                <img src='./images/lhulogoclear.png' alt='logo' id="lhu-logo"></img>
+                <p>&copy; 2024 Hikaru Un. All rights reserved.</p>
+                <p id='email-link'>lucashikaruun@gmail.com</p>
             </div>
         </div>
     );

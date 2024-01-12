@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -10,6 +10,18 @@ import './DogeSlider.css';
 import { Scrollbar, Navigation } from 'swiper/modules';
 
 function DogeSlider() {
+    const sliderRef = useRef(null);
+
+    const handlePrev = useCallback(() => {
+        if (!sliderRef.current) return;
+        sliderRef.current.swiper.slidePrev();
+    }, []);
+
+    const handleNext = useCallback(() => {
+        if (!sliderRef.current) return;
+        sliderRef.current.swiper.sliderNext();
+    }, []);
+
     return (
         <div className='doge-photos'>
             <div className="doge-title">Doge Photos</div>
@@ -31,7 +43,7 @@ function DogeSlider() {
                 slidesPerView={5}
                 spaceBetween={20}
                 loop={true}
-                navigation={{ enabled: true, nextEl: '#nav-right3', prevEl: '#nav-left3' }}
+                navigation
                 modules={[Scrollbar, Navigation]}
                 scrollbar={{ draggable: true }}
                 className='swiper3'
@@ -51,12 +63,9 @@ function DogeSlider() {
                 <SwiperSlide><img src='./images/DSC00392.jpg' alt='slide1'></img></SwiperSlide>
                 <SwiperSlide><img src='./images/DSC00393.jpg' alt='slide1'></img></SwiperSlide>
                 <SwiperSlide><img src='./images/DSC00396.jpg' alt='slide1'></img></SwiperSlide>
-
+                <div className='prev-arrow' onClick={handlePrev} />
+                <div className='next-arrow' onClick={handleNext} />
             </Swiper>
-            <div class="swiper-custom-nav3">
-                <img src="./images/left-arrow3.png" alt="Left Arrow" id="nav-left3" />
-                <img src="./images/right-arrow3.png" alt="Right Arrow" id="nav-right3" />
-            </div>
         </div>
     );
 }

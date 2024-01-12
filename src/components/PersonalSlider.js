@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -10,6 +10,18 @@ import './PersonalSlider.css';
 import { Scrollbar, Navigation } from 'swiper/modules';
 
 function PersonalSlider() {
+    const sliderRef = useRef(null);
+
+    const handlePrev = useCallback(() => {
+        if (!sliderRef.current) return;
+        sliderRef.current.swiper.slidePrev();
+    }, []);
+
+    const handleNext = useCallback(() => {
+        if (!sliderRef.current) return;
+        sliderRef.current.swiper.sliderNext();
+    }, []);
+
     return (
         <div className='personal-photos'>
             <div className="personal-title">Travel Photos</div>
@@ -31,7 +43,7 @@ function PersonalSlider() {
                 slidesPerView={5}
                 spaceBetween={20}
                 loop={true}
-                navigation={{ enabled: true, nextEl: '#nav-right2', prevEl: '#nav-left2' }}
+                navigation
                 modules={[Scrollbar, Navigation]}
                 scrollbar={{ draggable: true }}
                 className='swiper2'
@@ -50,11 +62,9 @@ function PersonalSlider() {
                 <SwiperSlide><img src='./images/DSC07683.jpg' alt='slide1'></img></SwiperSlide>
                 <SwiperSlide><img src='./images/DSC07813.jpg' alt='slide1'></img></SwiperSlide>
                 <SwiperSlide><img src='./images/DSC07842.jpg' alt='slide1'></img></SwiperSlide>
+                <div className='prev-arrow' onClick={handlePrev} />
+                <div className='next-arrow' onClick={handleNext} />
             </Swiper>
-            <div class="swiper-custom-nav2">
-                <img src="./images/left-arrow2.png" alt="Left Arrow" id="nav-left2" />
-                <img src="./images/right-arrow2.png" alt="Right Arrow" id="nav-right2" />
-            </div>
         </div>
     );
 }

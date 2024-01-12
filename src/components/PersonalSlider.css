@@ -81,25 +81,16 @@ body {
     background: rgb(60, 60, 60);
 }
 
-#nav-right2,
-#nav-left2 {
-    width: 30px;
-    position: absolute;
-    top: 118%;
-    transform: translateY(-50%);
+.swiper-button-next,
+.swiper-button-prev {
+    margin-top: -30px;
+    max-width: 20px;
+    color: black;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 
-#nav-right2 {
-    right: 60px;
-}
-
-#nav-left2 {
-    left: 60px;
-}
-
-#nav-right2:hover,
-#nav-left2:hover {
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
     opacity: 0.7;
 }
