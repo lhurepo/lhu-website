@@ -24,7 +24,7 @@ function DogeSlider() {
 
     return (
         <div className='doge-photos'>
-            <div className="doge-title">Doge Photos</div>
+            <div className="doge-title">Wildlife Photos</div>
             <Swiper
                 breakpoints={{
                     300: {
