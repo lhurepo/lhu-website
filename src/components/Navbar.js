@@ -18,7 +18,7 @@ function Navbar() {
                 </NavLink>
                 <TopBarItem to="/contact">CONTACT</TopBarItem>
             </div>
-            <img className="main-image" src="images/DSC09226.png" alt="Main" />
+            <img className="main-image" src="images/DSC09226.jpg" alt="Main" />
         </div>
     );
 }

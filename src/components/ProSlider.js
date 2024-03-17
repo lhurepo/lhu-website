@@ -49,12 +49,12 @@ function ProSlider() {
                 scrollbar={{ draggable: true }}
             >
                 <SwiperSlide><img src='./images/DSC01812.jpg' alt='slide1'></img></SwiperSlide>
-                <SwiperSlide><img src='./images/DSC01833.jpg' alt='slide1'></img></SwiperSlide>
                 <SwiperSlide><img src='./images/DSC01855.jpg' alt='slide1'></img></SwiperSlide>
                 <SwiperSlide><img src='./images/DSC01871.jpg' alt='slide1'></img></SwiperSlide>
                 <SwiperSlide><img src='./images/DSC01870.jpg' alt='slide1'></img></SwiperSlide>
                 <SwiperSlide><img src='./images/DSC02374.jpg' alt='slide1'></img></SwiperSlide>
                 <SwiperSlide><img src='./images/DSC02495.jpg' alt='slide1'></img></SwiperSlide>
+                <SwiperSlide><img src='./images/DSC01833.jpg' alt='slide1'></img></SwiperSlide>
                 <SwiperSlide><img src='./images/DSC02527.jpg' alt='slide1'></img></SwiperSlide>
                 <SwiperSlide><img src='./images/DSC02535.jpg' alt='slide1'></img></SwiperSlide>
                 <SwiperSlide><img src='./images/DSC02536.jpg' alt='slide1'></img></SwiperSlide>
@@ -65,6 +65,8 @@ function ProSlider() {
                 <SwiperSlide><img src='./images/DSC01484.jpg' alt='slide1'></img></SwiperSlide>
                 <SwiperSlide><img src='./images/DSC01686.jpg' alt='slide1'></img></SwiperSlide>
                 <SwiperSlide><img src='./images/DSC01794.jpg' alt='slide1'></img></SwiperSlide>
+                <SwiperSlide><img src='./images/DSC03237.jpg' alt='slide1'></img></SwiperSlide>
+                <SwiperSlide><img src='./images/DSC03249.jpg' alt='slide1'></img></SwiperSlide>
                 <div className='prev-arrow' onClick={handlePrev} />
                 <div className='next-arrow' onClick={handleNext} />
             </Swiper>

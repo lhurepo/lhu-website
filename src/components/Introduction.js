@@ -24,7 +24,7 @@ function Introduction() {
                         <p>
                             My name is Hikaru. I am a computer science and business student
                             in my 3rd year at the University of British Columbia with a strong interest in Software Development,
-                            FinTech, PM, and Design. I want to leverage the seemingly disparate
+                            Product Management, FinTech and Design. I want to leverage the seemingly disparate
                             fields of business and tech and continually learn about how these areas
                             can work together to improve other people's lives.
                         </p>
@@ -52,17 +52,17 @@ function Introduction() {
                             </Button>
                             <Collapse in={open}>
                                 <div id="collapse-text">
-                                    <p>こんにちは。ユエン光と申します。私は日本人と中国人のハーフで、カナダと日本の二重国籍を持つ、UBC
+                                    <p>ユエン光です。私はカナダと日本の国籍を持つ、UBC
                                         （ブリティッシュコロンビア大学）の3年生で、コンピュータサイエンスとビジネスを専攻しています。
-                                        ソフトウェア開発、FinTech、プロジェクトマネジメント、そしてデザインに深い興味を持っています。
-                                        私はビジネスとテクノロジーといった異なる分野がどのように連携して人々の生活を向上させるのかを常に学び、
+                                        ソフトウェア開発、プロダクトマネージメント、FinTech、そしてデザインに深い興味を持っています。
+                                        ビジネスとテクノロジーといった異なる分野がどのように連携して人々の生活を向上させるのかを常に学び、
                                         活用しようと考えています。
                                     </p>
 
-                                    <p>学業の傍ら、私はよく自然を探索したり、写真を撮ったり、読書も楽しんでいます！</p>
+                                    <p>学業の傍ら、自然を満喫したり、写真を撮ったり、読書を楽しんでいます！</p>
 
-                                    <p>☀️現在、ソフトウェア開発のインターンシップの機会を求めています。2024年5月以降勤務可能です。
-                                        日本国内での対面勤務も可能です。
+                                    <p>☀️今学期終了後（2024年5月以降）、ソフトウェア開発のインターンシップの機会を求めています。
+                                        日本国内での勤務も可能です。
                                     </p>
                                     <p>どうぞよろしくお願いいたします。</p>
                                 </div>
@@ -98,7 +98,7 @@ function Introduction() {
                                 I am currently in my 3rd year of study at the University of British Columbia
                                 in Vancouver, Canada. I major in computer science and business, and have covered
                                 coursework relevant to both fields of study. This includes classes like Software
-                                Construction, Computational Modelling, Data Structures and Algorithms, Computer Systems,
+                                Construction, Computational Modelling, Data Structures and Algorithms, Applied Machine Learning, Computer Systems,
                                 Statistics, and Management Information Systems, to name a few. I enjoy this program because it provides me with
                                 valuable insights into both aspects of project development, allowing me to understand
                                 the full lifecycle of bringing amazing products to end-users.
@@ -124,7 +124,7 @@ function Introduction() {
                             data-bs-parent="#accordionExample"
                         >
                             <div className="accordion-body">
-                                I wish there was something here too.
+                                I wish there was something here too. There will be, soon!
                             </div>
                         </div>
                     </div>
